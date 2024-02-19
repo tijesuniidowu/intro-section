@@ -1,0 +1,274 @@
+@import url(https://fonts.googleapis.com/css2?family=Epilogue:wght@500;700&display=swap);
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: var(--epilogue);
+}
+
+:root {
+  --Almost-White: hsl(0, 0%, 98%);
+  --Medium-Gray: hsl(0, 0%, 41%);
+  --Almost-Black: hsl(0, 0%, 8%);
+  --epilogue: "epilogue", "sans-serif";
+}
+
+body {
+  min-height: 100vh;
+  background-color: var(--Almost-White);
+  padding: 20px 0;
+}
+
+main {
+  width: 90%;
+  margin: 0 auto;
+}
+
+.header{
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.head{
+  display: flex;
+  align-items: center;
+  gap: 40px;
+}
+
+.nav-links a{
+font-size: 16px;
+}
+
+.nav-links a:not(:last-child) {
+  margin-right: 10px;
+}
+
+nav a{
+  text-decoration: none;
+  color: var(--Almost-Black);
+}
+
+div a{
+font-size: 16px;
+}
+
+.nav-two a{
+  text-decoration: none;
+  color: var(--Almost-Black);
+}
+
+.nav-two a:last-child{
+  padding: 8px 18px;
+  border-radius: 14px;
+  outline: 2px solid;
+  border-color: var(--Almost-Black);
+  margin-left: 10px;
+}
+
+section {
+  width: 80%;
+  margin: 0 auto;
+  display: flex;
+  justify-content: space-between;
+  gap: 5rem;
+  /* padding: 50px 120px 70px; */
+  align-items: flex-end;
+  margin-top: 50px;
+}
+
+.remote {
+  width: 55%;
+}
+
+.remote h1 {
+  font-size: 5vw;
+  font-weight: 700;
+}
+
+.remote p {
+  font-size: 18px;
+  color: var(--Medium-Gray);
+  line-height: 24px;
+  padding: 40px 24px 40px 0;
+}
+
+.remote button {
+  padding: 12px 20px;
+  border-radius: 12px;
+  font-size: 14px;
+  font-weight: 500;
+  background-color: var(--Almost-Black);
+  text-decoration: none;
+  color: var(--Almost-White);
+  font-family: var(--epilogue);
+  outline: none;
+}
+
+.logo-img{
+margin-top: 70px;
+display: flex;
+align-items: center;
+justify-content: space-between;
+}
+
+.hero {
+  width: 45%;
+  /* max-width: 600px; */
+}
+
+.hero img {
+  width: 100%;
+}
+  
+
+@media screen and (max-width: 1024px) {
+  section{
+    width: 90%;
+  }
+}
+
+
+@media screen and (max-width: 768px) {
+  main{
+    width: 100%;
+  }
+
+  .header{
+ padding: 0 20px;
+  }
+
+  section{
+    flex-direction: column-reverse;
+    width: 100%;
+    gap: 0;
+    padding: 0;
+    height: 100%;
+    align-items: center;
+    margin-bottom: 50px;
+  }
+
+  .remote{
+    width: 90%;
+    padding-top: 10px;
+    text-align: center;
+  }
+
+  .remote h1 {
+    font-size: 55px;
+    font-weight: 700;
+  }
+
+  .remote p {
+    padding: 20px 24px 40px 0;
+  }
+  
+  .remote button {
+    padding: 12px 20px;
+  }
+
+  .hero{
+    width: 100%;
+    margin: 30px 0;
+  }
+
+  .hero img{
+    content: url(./images/image-hero-mobile.png);
+    width: 100%;
+  }
+}
+
+@media screen and (max-width: 640px) {
+  .head img{
+    width: 80%;
+  }
+
+  .nav-links a{
+  font-size: 12px;
+  }
+  
+  div a{
+    font-size: 12px;
+    }
+
+    .nav-links a:not(:last-child) {
+      margin-right: 5px;
+    }
+    
+    .nav-two a:last-child{
+      padding: 4px 14px;
+      margin-left: 8px;}
+
+  .remote h1 {
+    font-size: 45px;
+    font-weight: 700;
+  }
+
+  .remote p {
+    font-size: 16px;
+  }
+}
+
+@media screen and (max-width: 425px) {
+  main{
+    overflow-x: hidden;
+  }
+
+  .head{
+    gap: 0px;
+  }
+
+  .head img{
+    width: 70%;
+  }
+
+  .nav-links a{
+    font-size: 10px;
+    }
+    
+    div a{
+      font-size: 10px;
+      }
+  
+      .nav-links a:not(:last-child) {
+        margin-right: 3px;
+      }
+      
+      .nav-two a:last-child{
+        padding: 4px 14px;
+        margin-left: 3px;}
+    
+  .remote h1 {
+    font-size: 35px;
+    font-weight: 700;
+  }
+
+  .remote p {
+    font-size: 16px;
+    padding: 18px 20px;
+  }
+}
+
+@media screen and (max-width: 375px) {
+  .head img{
+    width: 60%;
+  }
+
+  .nav-links a{
+    font-size: 7px;
+    }
+    
+    div a{
+      font-size: 7px;
+      }
+  
+      .nav-links a:not(:last-child) {
+        margin-right: 3px;
+      }
+      
+      .nav-two a:last-child{
+        padding: 4px 14px;
+        margin-left: 3px;}
+}
+
